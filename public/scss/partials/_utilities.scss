@@ -1,0 +1,13 @@
+// Sass Mixins and Functions
+@if variable-exists(font-url--primary) {
+  @import url($font-url--primary);
+}
+
+@if variable-exists(font-url--headers) {
+  @import url($font-url--headers);
+}
+
+// Target / Context = Result
+@function em($target, $context: $base__font-size) {
+  @return ($target / $context) * 1em;
+}

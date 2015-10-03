@@ -1,0 +1,9 @@
+{
+    "name": "the-glazebook",
+    "version": "1.0.0",
+    "dependencies": {
+        "font-awesome": "latest",
+        "angular": "latest",
+        "angular-route": "latest"
+    }
+}

@@ -1,16 +1,16 @@
 doctype html
-html(ng-app)
+html(ng-app='glazebook')
   head
-    title= title
-    //- link(rel='stylesheet', href='/stylesheets/normalize.css')
-    //- link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic')
-    //- link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,300,300italic')
+    title the glazebook
     link(rel='stylesheet', href='/libs/font-awesome/css/font-awesome.min.css')
-    //- link(rel='stylesheet', href='/stylesheets/foundation.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     
   body
     block content
-    script(src='libs/jquery/jquery.min.js')
+    script(src='libs/jquery/dist/jquery.min.js')
     script(src='libs/angular/angular.min.js')
-    script(src='libs/angular/angular-route.min.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js")
+    script(src='../javascripts/appRoutes.js')
+    script(src='../javascripts/controllers.js')
+    script(src='../javascripts/services.js')
+    script(src='../javascripts/app.js')

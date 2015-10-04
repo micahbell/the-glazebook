@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "dependencies": {
         "font-awesome": "latest",
-        "angular": "latest",
-        "angular-route": "latest"
+        "jquery": "latest",
+        "angular": "latest"
     }
 }

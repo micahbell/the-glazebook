@@ -1,11 +1,27 @@
 extends layout
 
 block content
-  .container
+  .container(ng-controller='AccountController')
     .row
       .medium-12.columns
         h1 the glazebook
         p Join or log in to store, search, and share your glaze recipes.
-        p Angular Test: {{1+1}}
+        p Angular Test: {{1+1}} {{test}}
+    
+    .row
+      .medium-6.columns
+        p Sign Up (All fields are required)
+        form(action='/signup' method='post')
+          input(type='text'     placeholder='Username'         name='username')
+          input(type='email'    placeholder='Email'            name='email')
+          input(type='password' placeholder='Password'         name='password')
+          input(type='password' placeholder='Confirm Password' name='confirm')
+          input(type='submit'   value='Sign Up')
+      .medium-6.columns
+        p Log In
+        form(action='/login' method='post')
+          input(type='email' placeholder='Email' name='email')
+          input(type='password' placeholder='Password' name='password')
+          input(type='submit' value='Log In')
 
 //

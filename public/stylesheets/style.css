@@ -2000,6 +2000,16 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+/*
+red-orange: #f15e51 | 241 94 81
+yellow-orange: #f7b267
+deep green: #093a43
+dark blue: #113b5a
+light blue: #b6dad5
+light warm gray: #f5f2f2
+warm gray: #dcd9d9
+dark warm gray: #767373
+*/
 html {
   font-family: sans-serif;
   /* 1 */
@@ -2206,6 +2216,20 @@ table {
 td,
 th {
   padding: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #555555; }
+
+body {
+  font-size: 16px;
+  line-height: 1.45;
+  font-family: "Open Sans", sans-serif; }
+
+a:visited,
+a:link {
+  text-decoration: none; }
 
 h1, h2, h3, h4 {
   font-family: "Open Sans Condensed", sans-serif; }

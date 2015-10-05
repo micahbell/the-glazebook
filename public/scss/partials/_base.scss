@@ -1,4 +1,21 @@
 // Global Styles
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  color: $emperor;
+}
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line-height/$base__font-size);
+  font-family: $font-family--primary;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
 h1, h2, h3, h4 {
   font-family: $font-family--headers;
 }

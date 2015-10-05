@@ -2,7 +2,7 @@ extends layout
 
 block content
   .container(ng-controller='AccountController')
-    .row
+    .row.login-page
       .medium-12.columns
         h1 the glazebook
         p Join or log in to store, search, and share your glaze recipes.
@@ -20,8 +20,23 @@ block content
       .medium-6.columns
         p Log In
         form(action='/login' method='post')
-          input(type='email' placeholder='Email' name='email')
+          input(type='email'    placeholder='Email'    name='email')
           input(type='password' placeholder='Password' name='password')
-          input(type='submit' value='Log In')
+          input(type='submit'   value='Log In')
+          
+        a(href='/auth/google')
+          button Log In with Google
+        a(href='/auth/linkedin')
+          button Log In with LinkedIn
+        a(href='/auth/logout')
+          button Logout
+
+
+
+
+
+
+
+
 
 //
